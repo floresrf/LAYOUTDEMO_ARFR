@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FLEX_LAYOUTDEMO_ARFR.GridDemo"
+             Title="GridDemo">
+    <Grid>
+        
+        <!--FILAS-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="200" />
+        </Grid.RowDefinitions>
+
+        <!--COLUMNAS-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="150" />
+        </Grid.ColumnDefinitions>
+
+        <!--COLUMNA 1-->
+        <Label 
+            BackgroundColor="#476"
+            WidthRequest="200" />
+        <Label 
+            BackgroundColor="#aaf"
+            Grid.Column="1"/>
+        <Label 
+            BackgroundColor="#66f"
+            Grid.Column="2"/>
+
+        <!--COLUMNA 2-->
+        <Label 
+            BackgroundColor="#69f"
+            Grid.Row="1"/>
+        <Label 
+            BackgroundColor="#346"
+            Grid.Column="1"
+            Grid.Row="1"/>
+        <Label 
+            BackgroundColor="#fa2"
+            Grid.Column="2"
+            Grid.Row="1"/>
+
+        <!--COLUMNA 3-->
+        <Label 
+            BackgroundColor="#fff"
+            Grid.Row="2"/>   
+        <Label 
+            BackgroundColor="#888"
+            Grid.Column="1"
+            Grid.Row="2"/>
+        <Label 
+            BackgroundColor="#000"
+            Grid.Column="2"
+            Grid.Row="2"/>
+
+        <!--COLUMNA 4-->
+        <Label
+            BackgroundColor="#f00"
+            Grid.Row="3"/>
+        <Label 
+            BackgroundColor="#0f0"
+            Grid.Column="1"
+            Grid.Row="3"/>
+        <Label 
+            BackgroundColor="#00f"
+            Grid.Column="2"
+            Grid.Row="3"/>
+    </Grid>
+</ContentPage>

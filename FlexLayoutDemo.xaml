@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FLEX_LAYOUTDEMO_ARFR.FlexLayoutDemo"
+             Title="FlexLayoutDemo">
+    <FlexLayout Direction="Column">
+        <Label
+            Text="Header"
+            FontSize="18"
+            BackgroundColor="#f00"
+            HorizontalTextAlignment="Center"/>
+        <!--Body-->
+        <FlexLayout FlexLayout.Grow="1">
+            <Label
+                    Text="Content"
+                    FontSize="18"
+                    BackgroundColor="#0f0"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    FlexLayout.Grow="1"
+                    />
+            <!-- NAVIGATION ITEMS -->
+            <BoxView 
+                    FlexLayout.Basis="150"
+                    FlexLayout.Order="-1"
+                    Color="#00f"
+                    />
+            <BoxView
+                    FlexLayout.Basis="50"
+                    Color="#ff0"
+                    />
+
+        </FlexLayout>
+        <!--Footer-->
+        <Label
+            Text="Footer"
+            FontSize="18"
+            BackgroundColor="#f0f"
+            HorizontalTextAlignment="Center"/>
+    </FlexLayout>
+</ContentPage>
