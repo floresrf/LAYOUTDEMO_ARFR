@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FLEX_LAYOUTDEMO_ARFR.DemoMainMenu"
+             Title="DemoMainMenu">
+    <VerticalStackLayout Margin="20">
+        
+        <Label 
+            Text="MENU DEMOS"
+            FontSize="32"
+            Margin="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button
+            Margin="20"
+            x:Name="_stackDemo"
+            Clicked="_stackDemo_Clicked"
+            Text="Go to StackLayout Demo"
+            FontSize="18"/>
+
+        <Button
+            Margin="20"
+            x:Name="_absoDemo"
+            Clicked="_absoDemo_Clicked"
+            Text="Go to AbsoluteLayout Demo"
+            FontSize="18"/>
+
+        <Button
+            Margin="20"
+            x:Name="_gridDemo"
+            Clicked="_gridDemo_Clicked"
+            Text="Go to Grid Demo"
+            FontSize="18"/>
+
+        <Button
+            Margin="20"
+            x:Name="_flexDemo"
+            Clicked="_flexDemo_Clicked"
+            Text="Go to FlexLayout Demo"
+            FontSize="18"/>
+        
+    </VerticalStackLayout>
+</ContentPage>

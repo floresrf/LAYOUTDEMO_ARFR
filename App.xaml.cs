@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AbsoluteLayoutDemo();
+            MainPage = new NavigationPage(new DemoMainMenu());
         }
     }
 }
